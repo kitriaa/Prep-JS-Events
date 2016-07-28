@@ -49,14 +49,11 @@ Make a visual list of the items in the orders array. When clicking on the produc
 var orders = [{product: "Space Cat T-shirt", price: 100}, {product: "Barry Manilow's Greatest Hits Colletion Vol 1", price: 500}, {product: "Chewbacca Mask", price: 3.41}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}];
 
 for(var i = 0; i < orders.length; i++){
-  var orderss = document.createElement('div');
-  orderss.className = "orders";
-  myOrders.appendChild(orderss);
 
   var visual = document.createElement('div');
   visual.className = "products";
   visual.innerHTML = orders[i].product;
-  orderss.appendChild(visual);
+  myOrders.appendChild(visual);
 
   var priceItem = document.createElement('div');
     priceItem.className = "price";
